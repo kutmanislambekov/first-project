@@ -1,0 +1,15 @@
+$primary: #252525;
+$primaryFontsColor:#fff;
+$hoverColor: tomato;
+$secondaryFontColor:#ccc;
+
+
+@mixin setFlexBox($space){
+    display: flex;
+    justify-content: $space;
+}
+
+@mixin setSize($width, $margin) {
+    width: $width;
+    margin: $margin;
+}

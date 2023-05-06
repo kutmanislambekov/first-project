@@ -1,0 +1,65 @@
+header{
+    padding: {
+        top: 20px;
+        bottom: 20px;
+    };
+    background-color: $primary;
+    .nav{
+        @include setSize(87%, 0 auto);
+        @include setFlexBox(space-between);
+        &_logo {
+         color: $primaryFontsColor;
+       font-size: 25px;
+        }
+        &_navbar{
+            @include setFlexBox (space-between);
+           @include setSize(60%, 0);
+           color: $primaryFontsColor;
+        }
+     &_burgerMenu {
+        display: none;
+        width: 30px;
+        
+        div{
+            width: 100%;
+            margin-bottom: 7px;
+            height: 3px;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+     }
+       
+    }
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 87%;
+    margin: 100px  auto;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    .col{
+        width: 20%;
+        height: 250px;
+        background-color: black;
+    }
+}
+.title{
+    text-align: center;
+    margin-top: 100px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 87%;
+    margin: 100px auto;
+    flex-wrap: wrap;
+    row-gap: 30px;
+.col{
+    width: 20%;
+    height: 250px;
+    background-color: black;
+}
+}
